@@ -8,6 +8,9 @@
 input:focus {
   box-shadow: none !important;
 }
+::placeholder {
+  color: var(--main-color) !important;
+}
 .main-btn {
   color: var(--main-color);
   background-color: transparent;
@@ -40,6 +43,7 @@ nav {
 nav .navbar-toggler {
   color: white;
   padding: 10px 15px;
+  border-radius: 5px;
   border: 1px solid white;
 }
 nav .navbar-toggler:focus {
@@ -63,6 +67,8 @@ nav input {
 }
 nav .icon {
   cursor: pointer;
+  color: white;
+  font-size: 17px;
 }
 /* end nav */
 /* start landing */
@@ -99,7 +105,8 @@ nav .icon {
   background-color: #aa76624d;
 }
 .work .box p {
-  font-weight: 600;
+  font-weight: 700;
+  font-size: 20px;
 }
 .work .box img {
   height: 200px;
@@ -119,8 +126,10 @@ nav .icon {
   background-color: var(--main-color);
   color: white;
 }
-::placeholder {
-  color: var(--main-color) !important;
+.subscribe .main-btn:hover,
+.contact .main-btn:hover {
+  color: var(--main-color);
+  background-color: white;
 }
 /* end subscribe */
 /* start contact */
@@ -140,5 +149,4 @@ footer {
   background-color: var(--main-color);
   color: white;
 }
-
 /* end footer */
